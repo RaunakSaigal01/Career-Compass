@@ -1,0 +1,4 @@
+-r requirements.txt
+transformers>=4.51,<6
+peft>=0.15,<1
+accelerate>=1,<2

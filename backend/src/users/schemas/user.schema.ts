@@ -8,8 +8,11 @@ export class User {
   @Prop({ required: true, unique: true, lowercase: true, trim: true })
   email: string;
 
-  @Prop({ required: true })
-  passwordHash: string;
+  @Prop()
+  passwordHash?: string;
+
+  @Prop({ unique: true, sparse: true })
+  googleId?: string;
 
   @Prop({ default: false })
   consentGiven: boolean;

@@ -1,0 +1,11 @@
+.venv/
+.doccano-venv/
+.doccano-data/
+__pycache__/
+*.py[cod]
+
+# Resume text, annotations, and trained models can contain sensitive data.
+data/
+models/
+logs/
+tools/
